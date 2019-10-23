@@ -9,3 +9,12 @@ steps:
   inputs:
     version: 3.0.x
     performMultiLevelLookup: true
+
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    command: build
+    projects: '**/*.csproj'
+    arguments: '--configuration Release' # Update this to match your need
