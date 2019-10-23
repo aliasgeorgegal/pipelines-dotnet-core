@@ -4,14 +4,6 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 steps:
-- task: UseDotNet@2
-  displayName: 'Install .NET Core SDK'
-  inputs:
-    version: 3.0.x
-    performMultiLevelLookup: true
-
-
-steps:
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
